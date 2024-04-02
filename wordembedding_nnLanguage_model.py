@@ -98,7 +98,7 @@ def get_loader(dataset, batch_size, shuffle = True):
     return data_loader
 
 #FeedForwardNNLM模型
-class FeedForwardNNLM(nn.ModuleMoudle):
+class FeedForwardNNLM(nn.Moudle):
     def __init__(self, vocab_size, embedding_dim, context_size, hidden_dim):
         super(FeedForwardNNLM,self).__init__()
         self.embeddings = nn.Embedding(vocab_size, embedding_dim)
